@@ -12,6 +12,7 @@
     <session id="554094966">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -20,11 +21,13 @@
         <counts>
           <entry key="html" value="1" />
           <entry key="py" value="13" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="12" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -50,12 +53,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+            <state relative-caret-position="442">
+              <caret line="66" column="70" lean-forward="true" selection-start-line="66" selection-start-column="70" selection-end-line="66" selection-end-column="70" />
               <folding>
                 <element signature="e#24#61#0" expanded="true" />
-                <marker date="1550171258819" expanded="true" signature="1651:1979" ph="..." />
-                <marker date="1550171258819" expanded="true" signature="1990:1995" ph="..." />
+                <marker date="1550171322596" expanded="true" signature="1652:1980" ph="..." />
+                <marker date="1550171322596" expanded="true" signature="1991:1996" ph="..." />
               </folding>
             </state>
           </provider>
@@ -89,6 +92,9 @@
       <find>dcui</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -106,6 +112,7 @@
     <option name="width" value="1400" />
     <option name="height" value="828" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -123,15 +130,6 @@
               <item name="STIGChecklistGenerator" type="b2602c69:ProjectViewProjectNode" />
               <item name="STIGChecklistGenerator" type="462c0819:PsiDirectoryNode" />
               <item name="vmwareEnv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="STIGChecklistGenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="STIGChecklistGenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (STIGChecklistGenerator) &gt;" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
               <item name="STIGChecklistGenerator" type="b2602c69:ProjectViewProjectNode" />
@@ -259,12 +257,12 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" weight="0.359375" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.50039744" side_tool="true" visible="true" weight="0.33164558" />
+      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.49960256" visible="true" weight="0.3586498" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50039744" side_tool="true" visible="true" weight="0.3586498" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32996324" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3290441" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49960256" visible="true" weight="0.33164558" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49960256" weight="0.33164558" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -283,12 +281,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>80</line>
+          <line>81</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>78</line>
+          <line>79</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
@@ -387,14 +385,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+        <state relative-caret-position="442">
+          <caret line="66" column="70" lean-forward="true" selection-start-line="66" selection-start-column="70" selection-end-line="66" selection-end-column="70" />
           <folding>
             <element signature="e#24#61#0" expanded="true" />
-            <marker date="1550171258819" expanded="true" signature="1651:1979" ph="..." />
-            <marker date="1550171258819" expanded="true" signature="1990:1995" ph="..." />
+            <marker date="1550171322596" expanded="true" signature="1652:1980" ph="..." />
+            <marker date="1550171322596" expanded="true" signature="1991:1996" ph="..." />
           </folding>
         </state>
       </provider>

@@ -72,14 +72,6 @@ def main():
 
     hosts = GetVMHosts(content)
 
-    #####DEBUG#####
-    host_view = content.viewManager.CreateContainerView(content.rootFolder,
-                                                        [vim.HostSystem],
-                                                        True)
-    obj = [host.name for host in host_view.view if host.name == 'esx-02a.corp.local']
-    host_view.Destroy()
-    return obj
-    print(host_view)
 
 
 # Main section
