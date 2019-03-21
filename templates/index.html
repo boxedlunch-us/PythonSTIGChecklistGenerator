@@ -1,0 +1,41 @@
+<!doctype html>
+<title>Dumb Title</title>
+<!--{% for h in hosts %}-->
+<!--<ul>-->
+    <!--<li>-->
+    <!--{{h.name}}-->
+    <!--</li>-->
+<!--</ul>-->
+
+<!--{% endfor %}-->
+
+<div>
+    <ul>
+        {% for t in targethosts %}
+        <li>
+            {{t.name}}
+        </li>
+        <li>{{t.check}}</li>
+        <li>{{t.result}}</li>
+
+        {% endfor %}
+    </ul>
+
+
+</div>
+<div>
+    <table>
+        <tr>
+            <th>Hostname</th>
+            <th>Check</th>
+            <th>Result</th>
+        </tr>
+        {% for t in targethosts %}
+        <tr>
+            <td><a href="#">{{t.name}}</a> </td>
+            <td>{{t.check}}</td>
+            <td>{{t.result}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>

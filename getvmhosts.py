@@ -1,5 +1,6 @@
 from pyVim.connect import SmartConnect, Disconnect
-# from pyVmomi import vim
+from pyVmomi import vim
+from stigchecks import v63173
 import atexit
 def GetVMHosts(content):
     host_view = content.viewManager.CreateContainerView(content.rootFolder,
@@ -24,3 +25,11 @@ def listvmhosts():
     hosts = GetVMHosts(content)
 
     return hosts
+
+def checks():
+    hostList = listvmhosts()
+    targetHosts = list()
+    for h in hostList:
+        targetHosts.append(v63173(h))
+
+    return targetHosts
