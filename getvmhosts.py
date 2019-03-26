@@ -1,6 +1,5 @@
 from pyVim.connect import SmartConnect, Disconnect
 from pyVmomi import vim
-from stigchecks import v63173
 import atexit
 def GetVMHosts(content):
     host_view = content.viewManager.CreateContainerView(content.rootFolder,
@@ -13,6 +12,14 @@ def GetVMHosts(content):
 
 # args = get_args()
 
+def getvcenterconn():
+    serviceInstance = SmartConnect(host='vcsa-01a.corp.local',
+                                   user='administrator@vsphere.local',
+                                   pwd='VMware1!',
+                                   port=443)
+    atexit.register(Disconnect, serviceInstance)
+    content = serviceInstance.RetrieveContent()
+    return content
 
 def listvmhosts():
     serviceInstance = SmartConnect(host='vcsa-01a.corp.local',
@@ -26,6 +33,13 @@ def listvmhosts():
 
     return hosts
 
+def getsinglehost(hostname):
+    vmhosts = GetVMHosts(getvcenterconn())
+    for v in vmhosts:
+        if v.name == hostname:
+            return v
+
+
 def checks():
     hostList = listvmhosts()
     targetHosts = list()
@@ -33,3 +47,19 @@ def checks():
         targetHosts.append(v63173(h))
 
     return targetHosts
+
+
+class complianceObj:
+    def __init__(self, name, check, result):
+        self.name = name
+        self.check = check
+        self.result = result
+
+# def v63173(host):
+#     for h in host.configManager.advancedOption.setting:
+#         if h.key == 'DCUI.Access':
+#             # print(h.key)
+#             # print(h.value)
+#             obj = complianceObj(host.name, h.key, h.value)
+#             return obj
+

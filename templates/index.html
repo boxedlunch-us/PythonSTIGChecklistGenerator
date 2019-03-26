@@ -9,33 +9,33 @@
 
 <!--{% endfor %}-->
 
-<div>
-    <ul>
-        {% for t in targethosts %}
-        <li>
-            {{t.name}}
-        </li>
-        <li>{{t.check}}</li>
-        <li>{{t.result}}</li>
+<!--<div>-->
+    <!--<ul>-->
+        <!--{% for t in targethosts %}-->
+        <!--<li>-->
+            <!--{{t.name}}-->
+        <!--</li>-->
+        <!--<li>{{t.check}}</li>-->
+        <!--<li>{{t.result}}</li>-->
 
-        {% endfor %}
-    </ul>
+        <!--{% endfor %}-->
+    <!--</ul>-->
 
 
-</div>
+<!--</div>-->
 <div>
     <table>
         <tr>
             <th>Hostname</th>
-            <th>Check</th>
-            <th>Result</th>
         </tr>
         {% for t in targethosts %}
         <tr>
-            <td><a href="#">{{t.name}}</a> </td>
-            <td>{{t.check}}</td>
-            <td>{{t.result}}</td>
+            <td><a href="/compliance/{{t.name}}">{{t.name}}</a> </td>
+            <!--<td>{{t.check}}</td>-->
+            <!--<td>{{t.result}}</td>-->
         </tr>
         {% endfor %}
     </table>
 </div>
+
+<p><a href="/">back</a> </p>

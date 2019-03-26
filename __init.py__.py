@@ -1,0 +1,1 @@
+from pyVmomi import pyVmomiSettings
