@@ -9,8 +9,8 @@ pipeline{
         }
         stage('Dependency Check') {
             steps {
-                sh('mkdir -p build/owasp')
-                dependencycheck additionalArguments: '--project PythonStig --scan ./ --out build/owasp/dependency-check-report.xml --format XML', odcInstallation: 'OWASP-Dependency-Check'
+                sh('mkdir -p build/reports')
+                dependencycheck additionalArguments: '--project PythonStig --scan ./ --out build/reports/dependency-check-report.xml --format XML', odcInstallation: 'OWASP-Dependency-Check'
             }
         }
 
